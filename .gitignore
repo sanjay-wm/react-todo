@@ -1,4 +1,3 @@
 # To track file and remove to git commit
 
 node_modules/
-src/ 
