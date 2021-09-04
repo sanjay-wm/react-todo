@@ -15,9 +15,13 @@ function AddTodo({addTodo}) {
   }
 
   return (
-    <div>
-      <input type="text" onChange={handleOnChange} value={value} placeholder="Text here" className="todo-field"/>
-      <button className= 'btn' onClick={handleAdd}>Create Task</button>
+    <div className='row'>
+      <div className='col-md-8 offset-md-2'>
+        <input type="text" onChange={handleOnChange} value={value} className="form-control" name="todo-item" placeholder="Text here" />
+      </div>
+      <div className='col-md-8 mt-3'>
+        <button className= 'btn btn-primary' onClick={handleAdd} style={{width: '99%', marginLeft: '27%'}}>Create Task</button>
+      </div>
     </div>
   )
 }

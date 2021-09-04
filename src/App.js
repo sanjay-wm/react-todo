@@ -10,14 +10,38 @@ const filters = ['All', 'Completed', 'ncomplete']
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <div className="App">
-          <h1>Todo List</h1>
-          <AddTodo/>
-          <VisibilityFilter filters={filters}/>
-          <TodoList />
-        </div>
-      </Provider>
+      <div className ='container-fluid wrapper'>
+        <div className="row-fluid columns content">
+          <div className="card mt-2">
+            <div className="card-body">
+              <h3 className="card-header">Todo List</h3>
+              <Provider store={store}>
+                <div className="App">
+                  <div className="row mt-4">
+                    <div className="col-sm-6">
+                      <div className="card">
+                        <div className="card-body">
+                          <h5 className="card-title">Create new task</h5>
+                            <AddTodo/>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-sm-6">
+                      <div className="card">
+                        <div className="card-body">
+                          <h5 className="card-title">List todo items</h5>
+                          <VisibilityFilter filters={filters}/>
+                          <TodoList />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Provider>
+            </div>
+          </div>
+        </div> 
+      </div>
     );
   }
 }
