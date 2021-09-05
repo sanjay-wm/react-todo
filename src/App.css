@@ -22,11 +22,29 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+li{
+  list-style-type: none;
+  line-height: 35px;
+  background-color: gray;
+  height: 40px;
+  border: 1px solid dimgray;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
 
 li.completed{
-  text-decoration: line-through;
+  /*text-decoration: line-through;*/
+  background-color: #efbfbf;
 }
 
 .filter-btn {
   margin-right: 10px;
+  border-radius: 5PX;
+  height: 35px;
+  margin-bottom: 15px;
+}
+
+
+button.active{
+  background-color: #5fcfe8d4;
 }

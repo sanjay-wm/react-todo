@@ -5,7 +5,9 @@ import { FILTER_ALL, FILTER_COMPLETED } from '../redux/actionTypes'
 import { toggleTodo } from '../redux/actions'
 
 const Todo = ({ todo, id, toggleTodo }) => (
-    <li className={todo.completed ? 'completed' : ''} onClick={() => toggleTodo(id)}>{todo.content}</li>
+    <li className={todo.completed ? 'completed' : ''}  onClick={() => toggleTodo(id)}>
+      {todo.content}
+    </li>
 )
 
 function TodoList({ todos, toggleTodo }) {

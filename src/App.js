@@ -21,7 +21,9 @@ class App extends Component {
                     <div className="col-sm-6">
                       <div className="card">
                         <div className="card-body">
-                          <h5 className="card-title">Create new task</h5>
+                          <div className='col-sm-7'>
+                            <p className="card-title" style={{fontSize: '21px', fontWeight: 'bold', marginLeft: '25px'}}>Create new task</p>
+                          </div>
                             <AddTodo/>
                         </div>
                       </div>
@@ -29,7 +31,9 @@ class App extends Component {
                     <div className="col-sm-6">
                       <div className="card">
                         <div className="card-body">
-                          <h5 className="card-title">List todo items</h5>
+                          <div className='col-sm-7'>
+                            <p className="card-title" style={{fontSize: '21px', fontWeight: 'bold', marginLeft: '25px'}}>List todo items</p>
+                          </div>
                           <VisibilityFilter filters={filters}/>
                           <TodoList />
                         </div>
