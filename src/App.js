@@ -31,7 +31,7 @@ class App extends Component {
                     <div className="col-sm-6">
                       <div className="card">
                         <div className="card-body">
-                          <div className='col-sm-7'>
+                          <div className='col-sm-7 offset-md-2'>
                             <p className="card-title" style={{fontSize: '21px', fontWeight: 'bold', marginLeft: '25px'}}>List todo items</p>
                           </div>
                           <VisibilityFilter filters={filters}/>
