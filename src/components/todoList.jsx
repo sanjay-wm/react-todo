@@ -12,7 +12,7 @@ const Todo = ({ todo, id, toggleTodo }) => (
         </li>
       </div>
       <div className='col-md-2' onClick={() => toggleTodo(id)}>
-        <button type="button" class="btn btn-success">Completed</button>
+        <button type="button" className="btn btn-success">Completed</button>
       </div>
     </div>
 )
