@@ -2,3 +2,10 @@ body {
   min-height: 100%;
   background-color: #d5e2d5c4 !important;
 }
+
+.todo-item {
+  text-align: left;
+  float:  left;
+  margin-left: 20px;
+  text-transform: capitalize;
+}

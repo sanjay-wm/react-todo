@@ -5,9 +5,16 @@ import { FILTER_ALL, FILTER_COMPLETED } from '../redux/actionTypes'
 import { toggleTodo } from '../redux/actions'
 
 const Todo = ({ todo, id, toggleTodo }) => (
-    <li className={todo.completed ? 'completed' : ''}  onClick={() => toggleTodo(id)}>
-      {todo.content}
-    </li>
+    <div className='row'>
+      <div className='col-md-8 offset-md-1'>
+        <li className={todo.completed ? 'completed' : ''}  onClick={() => toggleTodo(id)}>
+          <p className='todo-item'> {todo.content} </p>
+        </li>
+      </div>
+      <div className='col-md-2' onClick={() => toggleTodo(id)}>
+        <button type="button" class="btn btn-success">Completed</button>
+      </div>
+    </div>
 )
 
 function TodoList({ todos, toggleTodo }) {
