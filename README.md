@@ -18,6 +18,8 @@ After creation, your project should look like this:
 react-app/
   node_modules/
   public/
+    screenshoots/
+    stylesheets/
     images/todo.png
     index.html
     favicon.ico
